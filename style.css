@@ -1,0 +1,157 @@
+/* Variables */
+:root{
+  --neon-green: #39ff14;
+  --neon-black: #1c1c1c;
+}
+
+/* Default */
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
+/* Utilities */
+a{
+  text-decoration: none;
+  color: white;
+}
+li{
+  list-style: none;
+}
+
+.container{
+  max-width:100%;
+  height: 1vh;
+  margin: auto;
+  overflow: none;
+}
+
+
+/* Loader */
+#Load-container{
+  width: 100%;
+  height: 1vh;
+}
+
+#loading-overlay{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height: 100%;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--neon-black);
+  color:var(--neon-green);
+  z-index: 2;
+}
+
+.content{
+  text-align:center;
+  color: var(--neon-green);
+  font-size:50px;
+  margin-bottom: 2rem;
+  height: fit-content;
+}
+.Loader{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle{
+ height: 0px;
+ width:0px;
+ background-color:var(--neon-green);
+ margin:15px;
+ border-radius: 50%;
+ animation: cat 2s infinite alternate;
+ transform-origin: center;
+}
+
+.circle:nth-child(2){
+  animation-delay:0.5s;
+}
+.circle:nth-child(3){
+  animation-delay:0.5s;
+}
+
+@keyframes cat{
+  25%{
+    width:10px;
+    height: 10px; 
+  }
+  50%{
+    width:20px;
+    height: 20px;
+  }
+  75%{
+    width:10px;
+    height: 10px;
+  }
+  100%{
+    width: 0px;
+    height:0px;
+  }
+}
+
+
+
+
+/* Landingpage */
+#main-nav{
+  background-color: var(--neon-black);
+  color:white;
+  padding: 1.3rem
+}
+
+.nav-container{
+  display: flex;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  gap: 3rem;
+  color: var(--neon-green);
+}
+
+#main-nav a{
+  color:var(--neon-green);
+}
+
+#main-nav a .active{
+  color: white;
+}
+
+
+/* MOBILITY */
+@media(max-width:480px) {
+  .nav-container{
+    gap: 2rem;
+  }
+}
+
+@media(max-width:240px){
+  .nav-container{
+    display: block;
+    text-align: center;
+  }
+  #main-nav a{
+    margin-bottom: 2rem;
+  }
+}
+
+
