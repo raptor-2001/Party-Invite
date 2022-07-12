@@ -1,7 +1,15 @@
 /* Variables */
 :root{
-  --neon-green: #39ff14;
+  --neon-green: #00ff00;
   --neon-black: #1c1c1c;
+  --neon-yellow: #ffff00;
+  --neon-red: #ff0000;
+  --neon-blue: #0ff0fc;
+  --neon-d_blue:#0033ff;
+  --neon-pink:#ff00ff;
+  --neon-l_pink: #ff00cc;
+  --neon-d_pink: #ff0099;
+
 }
 
 /* Default */
@@ -18,6 +26,7 @@ body{
   font-size: 1rem;
   max-width: 100%;
   overflow-x: hidden;
+  margin: auto;
 }
 
 
@@ -29,10 +38,14 @@ a{
 li{
   list-style: none;
 }
+video{
+  width: 100%;
+  color: white;
+}
 
 .container{
   max-width:100%;
-  height: 1vh;
+  height: fit-content;
   margin: auto;
   overflow: none;
 }
@@ -44,7 +57,7 @@ li{
 #main-nav{
   background-color: var(--neon-black);
   color:white;
-  padding: 1.3rem
+  padding: 1.3rem;
 }
 
 .nav-container{
@@ -65,6 +78,36 @@ li{
 }
 
 
+/* Invitation */
+.invitation{
+  background-color: black;
+  color: var(--neon-green);
+  text-align: center;
+}
+.invitation h2{
+  text-align: center;
+  padding: 2rem 0;
+  color:white;
+}
+.invitation h3{
+  text-align: center;
+  padding: 2rem 0;
+  color:var(--neon-yellow);
+}
+
+.invitation .date_time{
+  color: var(--neon-l_pink);
+}
+
+.invitation .location{
+  padding-bottom: 2rem;
+  color: var(--neon-blue);
+}
+
+.invitation .host{
+  padding-bottom: 2.4rem;
+  color: white;
+}
 
 /* Footer */
 footer{
