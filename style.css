@@ -38,6 +38,44 @@ li{
 }
 
 
+
+
+/* Landingpage */
+#main-nav{
+  background-color: var(--neon-black);
+  color:white;
+  padding: 1.3rem
+}
+
+.nav-container{
+  display: flex;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  gap: 3rem;
+  color: var(--neon-green);
+}
+
+#main-nav a{
+  color:var(--neon-green);
+}
+
+#main-nav a .active{
+  color: white;
+}
+
+
+
+/* Footer */
+footer{
+  max-width: 100%;
+  background-color: var(--neon-black);
+  padding: 1rem;
+  color: var(--neon-green);
+  text-align: center;
+}
+
+
 /* Loader */
 #Load-container{
   width: 100%;
@@ -109,32 +147,6 @@ li{
   }
 }
 
-
-
-
-/* Landingpage */
-#main-nav{
-  background-color: var(--neon-black);
-  color:white;
-  padding: 1.3rem
-}
-
-.nav-container{
-  display: flex;
-  width: 100%;
-  align-content: center;
-  justify-content: center;
-  gap: 3rem;
-  color: var(--neon-green);
-}
-
-#main-nav a{
-  color:var(--neon-green);
-}
-
-#main-nav a .active{
-  color: white;
-}
 
 
 /* MOBILITY */
