@@ -5,7 +5,7 @@ const overlay = document.getElementById('loading-overlay');
 function init(){
   setTimeout((()=>{
     overlay.remove();
-  }),4000)
+  }),5000)
 } 
 
 init();
